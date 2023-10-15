@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Eras</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-color: #ffffff;
+            border: 10px solid #272727;
+            height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            background-image: url('industry1.jpg');
+            opacity: 0.9;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #272727;
+            padding: 10px 30px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #87CEEB;
+        }
+
+        .menu-items {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-items a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .menu-items a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-items a:hover::before {
+            width: 100%;
+        }
+
+        .menu-items a:hover {
+            color: #87CEEB;
+        }
+
+        .industry-info {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .industry-info img {
+            width: 50%;
+            margin: 15px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">Human Eras</div>
+        <div class="menu-items">
+            <a href="file:///C:/Users/Administrator/Desktop/Home.html">Home</a>
+            <a href="file:///C:/Users/Administrator/Desktop/zPrehistoric-Era.html">Pre-Historic Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/zAncient-Era2.html">Ancient Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/industrialera.html">Industrial Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/Electronic-era.html">Electronic Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/artifacts.html">Artifacts</a>
+            <a href="#">About</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Industrial Era information with image -->
+        <div class="industry-info">
+            <img src="industrial1.jpg" alt="Industrial Era Image">
+            <h4>The Industrial Era, spanning the 18th to the early 20th century, was marked by a period of significant technological, socioeconomic, and cultural changes. It began with the mechanization of the textile industries, the development of iron-making techniques, and the rise of the steam engine. This era transformed largely rural, agrarian societies into industrial urban areas, leading to unprecedented growth and advancement.</h4>
+        </div>
+        <!-- Rest of your webpage content goes here... -->
+    </div>
+
+</body>
+
+</html>

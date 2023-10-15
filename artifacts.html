@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Eras</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-color: #ffffff;
+            border: 10px solid #272727;
+            height: auto;
+            overflow-y: scroll;
+        }
+
+        body::before {
+            content: "";
+            background-image: url('facts1.png');
+            opacity: 0.9;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #272727;
+            padding: 10px 30px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #87CEEB;
+        }
+
+        .menu-items {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-items a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .menu-items a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-items a:hover::before {
+            width: 100%;
+        }
+
+        .menu-items a:hover {
+            color: #87CEEB;
+        }
+
+        .artifact-info {
+            padding: 20px;
+            text-align: justify;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 25px;
+            border-radius: 5px;
+            line-height: 1.5;
+        }
+
+        .artifact-info h2 {
+            color: #272727;
+            text-decoration: underline;
+        }
+
+        .artifact-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .artifact-info ul li {
+            margin-bottom: 10px;
+        }
+
+        .artifact-info ul li::before {
+            content: '→';
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">Human Eras</div>
+        <div class="menu-items">
+            <a href="file:///C:/Users/Administrator/Desktop/Home.html">Home</a>
+            <a href="file:///C:/Users/Administrator/Desktop/zPrehistoric-Era.html">Pre-Historic Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/zAncient-Era2.html">Ancient Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/industrialera.html">Industrial Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/Electronic-era.html">Electronic Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/artifacts.html">Artifacts</a>
+            <a href="file:///C:/Users/darren%20mico/OneDrive/Desktop/~!about!~.html">About</a>
+            
+            
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Artifact information -->
+        <div class="artifact-info">
+            <b>The history of humanity is rich, and various eras have left behind unique artifacts that provide insight into the cultures, technologies, and advancements of the time. Here's a brief look at some of the key artifacts from different human eras:</b>
+            
+            <h2>Prehistoric Era:</h2>
+            <ul>
+                <li>Stone Tools: From simple sharp-edged rocks to more refined axes and spears, these tools helped early humans hunt and adapt to their environment.</li>
+                <li>Cave Paintings: Sites like Lascaux in France show intricate depictions of animals, humans, and abstract symbols.</li>
+                <li>Fossils: Remains of early humans and animals, such as the "Lucy" Australopithecus skeleton.</li>
+                <li>Pottery: As humans settled and began practicing agriculture, they created pottery for storage and cooking.</li>
+            </ul>
+            
+            <h2>Ancient era:</h2>
+            <ul>
+                <li>Pyramids of Egypt: Tombs for the Pharaohs, the most famous being the Great Pyramid of Giza.</li>
+                <li>The Rosetta Stone: Found in Egypt, it was key in deciphering Egyptian hieroglyphics.</li>
+                <li>The Parthenon: A temple in Athens dedicated to the goddess Athena.</li>
+                <li>Roman Aqueducts: Structures that carried water over vast distances to supply cities.</li>
+            </ul>
+
+            <h2>Industrial era</h2>
+            <ul>
+                <li>Steam Engines: Machines that utilized steam power, heralding the beginning of the industrial revolution.</li>
+                <li>Locomotives: Steam-powered trains that revolutionized transport.</li>
+                <li>Telegraph Machines: Allowed for rapid communication over long distances.</li>
+                <li>Factory Machinery: Equipment designed for mass production in large factories.</li>
+                <li>Photographic Cameras: Early devices for capturing still images.</li>
+            
+            <h2>Digital/Modern Era:</h2>
+            <ul>
+                <li>Integrated Circuits: Essential for the advancement of digital technology and modern computers.</li>
+                <li>The World Wide Web: Conceived and developed to meet the demand for automated information-sharing between scientists in universities and institutes around the world.</li>
+                <li>Smartphones and Tablets: Devices like the Apple iPhone and iPad that revolutionized communication and digital interaction in the 21st century.</li>
+            </ul>
+
+            <p>These artifacts, among countless others, offer a tangible link to our past, helping historians and enthusiasts understand the evolution of human society, culture, and technology.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

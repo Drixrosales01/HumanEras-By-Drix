@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Eras</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-color: #ffffff;
+            border: 10px solid #272727;
+            height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            background-image: url('digitalera.jpg');
+            opacity: 0.9;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #272727;
+            padding: 10px 30px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #87CEEB;
+        }
+
+        .menu-items {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-items a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .menu-items a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-items a:hover::before {
+            width: 100%;
+        }
+
+        .menu-items a:hover {
+            color: #87CEEB;
+        }
+
+        .electronic-info {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .electronic-info img {
+            width: 50%;
+            margin: 15px 0;
+        }
+
+        .electronic-info button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #272727;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .electronic-info button:hover {
+            background-color: #87CEEB;
+            color: #272727;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">Human Eras</div>
+        <div class="menu-items">
+            <a href="file:///C:/Users/Administrator/Desktop/Home.html">Home</a>
+            <a href="file:///C:/Users/Administrator/Desktop/zPrehistoric-Era.html">Pre-Historic Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/zAncient-Era2.html">Ancient Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/industrialera.html">Industrial Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/Electronic-era.html">Electronic Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/artifacts.html">Artifacts</a>
+            <a href="#">About</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Electronic Era information with image -->
+        <div class="electronic-info">
+            <img src="digital1.jpg" alt="Electronic Era Image">
+            <h4>The Electronic Era, spanning the mid-20th century to the present, has been marked by rapid advancements in electronics and technology. This era ushered in the age of computers, the internet, and smartphones, fundamentally changing the way people live, work, and communicate. The digitization of information and the globalization of communication networks have transformed society in countless ways.</h4>
+            <button onclick="window.location.href='https://prezi.com/p/kgm89_jefbqp/mil-electronic-age/'">More information about this topic</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

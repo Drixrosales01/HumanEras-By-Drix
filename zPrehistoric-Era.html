@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Eras</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-color: #ffffff;
+            border: 10px solid #272727;
+            height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            background-image: url('prehistoricality1.jpg');
+            opacity: 0.9;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #272727;
+            padding: 10px 30px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #87CEEB;
+        }
+
+        .menu-items {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-items a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .menu-items a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-items a:hover::before {
+            width: 100%;
+        }
+
+        .menu-items a:hover {
+            color: #87CEEB;
+        }
+
+        .prehistoric-info {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .prehistoric-info img {
+            width: 50%;
+            margin: 15px 0;
+        }
+
+        .info-button {
+            background-color: #87CEEB;
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .info-button:hover {
+            background-color: #5caedc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">Human Eras</div>
+        <div class="menu-items">
+            <a href="file:///C:/Users/Administrator/Desktop/Home.html">Home</a>
+            <a href="file:///C:/Users/Administrator/Desktop/zPrehistoric-Era.html">Pre-Historic Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/zAncient-Era2.html">Ancient Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/industrialera.html">Industrial Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/Electronic-era.html">Electronic Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/artifacts.html">Artifacts</a>
+            <a href="file:///C:/Users/darren%20mico/OneDrive/Desktop/~!about!~.html">About</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="prehistoric-info">
+            <img src="prehistorical1.jpg" alt="Dinosaur Image">
+            <h4>The Prehistoric Era refers to all the time before recorded history began. It spans from the time when Earth first formed, more than 4.5 billion years ago, up until about 5,000 years ago when humans began to write down their own history. This was a time of evolving and adapting for life on Earth, leading to the rise of the dinosaurs, their extinction, and eventually the emergence of humans.</h4>
+            <a href="https://www.history.com/news/prehistoric-ages-timeline" class="info-button">More information about this topic</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
